@@ -2,7 +2,7 @@
 
 Theme for [Sublime Text](https://www.sublimetext.com) and [Sublime Merge](https://www.sublimemerge.com).
 
-Source themes: [Numix Theme](https://github.com/nauzethc/sublime-text-numix), [Material Theme](https://github.com/equinusocio/material-theme), default dark theme from **Sublime Merge**.
+Source themes: [Numix Theme](https://github.com/nauzethc/sublime-text-numix), [Material Theme](https://github.com/equinusocio/material-theme), default **Merge Dark** theme from **Sublime Merge**.
 
 Package Control: [**Norber Theme**](https://packagecontrol.io/packages/Norber%20Theme).
 
