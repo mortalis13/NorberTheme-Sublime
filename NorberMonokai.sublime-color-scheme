@@ -3,7 +3,7 @@
     "variables":
     {
         "background": "#1a191d",
-        
+
         "black": "hsl(0, 0%, 0%)",
         "black2": "hsl(60, 17%, 11%)",
         "black3": "hsl(70, 8%, 15%)",
@@ -356,7 +356,7 @@
             "scope": "message.error",
             "foreground": "#f05a5a"
         },
-        
+
         // Diff changes
         // >> Use only char's colors and don't highlight the global changed areas
         {
@@ -367,18 +367,18 @@
             "scope": "diff.inserted",
             "background": "hsla(160, 50%, 30%, 0)",
         },
-        
+
         {
             "scope": "diff.deleted.char",
-            "background": "hsla(340, 30%, 38%, 0.3)",
-            "foreground_adjust": "l(+ 10%)"
+            "background": "hsla(340, 60%, 60%, 0.35)",
+            "foreground_adjust": "l(+ 20%)"
         },
         {
             "scope": "diff.inserted.char",
-            "background": "hsla(160, 50%, 45%, 0.3)",
-            "foreground_adjust": "l(+ 10%)"
+            "background": "hsla(160, 50%, 45%, 0.35)",
+            "foreground_adjust": "l(+ 20%)"
         },
-        
+
         // Custom log syntax
         {
             "name": "Log Debug",

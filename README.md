@@ -1,35 +1,32 @@
-# Norber Theme v1.6
+# Norber Theme 2.0
 
-A Theme for [Sublime Text](http://sublimetext.com) editor.  
-Source themes: [Numix Theme](https://github.com/nauzethc/sublime-text-numix), [Material Theme](https://github.com/equinusocio/material-theme).
+Theme for [Sublime Text](https://www.sublimetext.com) and [Sublime Merge](https://www.sublimemerge.com).
 
-Package Control page: [**Norber Theme**](https://packagecontrol.io/packages/Norber%20Theme).
+Source themes: [Numix Theme](https://github.com/nauzethc/sublime-text-numix), [Material Theme](https://github.com/equinusocio/material-theme), default dark theme from **Sublime Merge**.
+
+Package Control: [**Norber Theme**](https://packagecontrol.io/packages/Norber%20Theme).
 
 ## Changes
-
 - Space between tabs
 - Different colors for active/inactive tabs
 - Different hover color for sidebar
 - File icons for sidebar items
 - Changed document tab is highlighted with the bottom light line
 
-
 ## Install
-  
   *With Package Control*:
-  
+
   - press **Ctrl + Shift + P**
   - find *Package Control: Install Package*
   - type: *Norber Theme*
-  
+
   *Manually*:
-  
+
   - Download a [**release**](https://github.com/mortalis13/Norber-Theme-Sublime/releases)
-  - Unzip the files and name the folder as **NorberTheme**
+  - Unzip the files and rename the folder to **NorberTheme**
   - Find your **Packages** directory using the menu item `Preferences -> Browse Packages...`
   - Copy the folder **NorberTheme** into the **Packages** directory.
-  - Click on `Preferences -> Settings - User` and add the next line:
-
+  - Click on `Preferences -> Settings - User` and add the next lines:
 
 For **Sublime Text 4**:
 ```
@@ -43,8 +40,14 @@ For **Sublime Text 3**:
 "color_scheme": "Packages/NorberTheme/NorberMonokai.tmTheme",
 ```
 
-## Additional Sublime Settings [Optional]
+For **Sublime Merge**:
+```
+"theme": "NorberMerge.sublime-theme",
+"color_scheme": "NorberMonokai.sublime-color-scheme",
+```
 
+## Additional Settings [Optional]
+**Sublime Text**
 ```
 "always_show_minimap_viewport" : true,
 "show_tab_close_buttons": false,
@@ -66,30 +69,37 @@ For **Sublime Text 3**:
 ],
 ```
 
+**Sublime Merge**
+```
+"tabs_medium": true,
+"show_tab_close_buttons": false,
+"font_size": 11,
+```
+
+## Notes
+To reduce the loading time, put the **NorberTheme.sublime-package** to the **Installed Packages** folder.
+
 ## Changelog
+### 2.0
+- adapted to be compatible with Sublime Text and Sublime Merge
+- changed status bar font to Consolas and increased font size
 
 ### 1.6
-
 - various scheme color changes
 
 ### 1.5
-
 - changed console panel margins
 
 ### 1.4
-
 - new icons adaptation
 
 ### 1.3
-
 - theme adapted for Sublime Text 4
 
 ### 1.2
-
 - theme name without spaces
 
 ### 1.1
-
 - color scheme for Sublime Text 4
 - hide "FOLDERS" line in the sidebar
 - dark mode for widgets (console, input fields)
@@ -97,27 +107,22 @@ For **Sublime Text 3**:
 - changed selection border color
 
 ### 1.0.5
-
 - updated color scheme for Sublime Text b3147
 
 ### 1.0.4
-
 - added panel switcher icon in Status bar
 - changed colors for quick panel labels
 - fixed colors for Quick Switch Project dialog
 
 ### 1.0.3
-
 - changed cursor color
 - added styles for Log4j (used for a log4j syntax highlight)
 
 ### 1.0.2
-
 - changed style of text fields (search, console, quick panels) + dropdown button style
 - changed style of status bar (height, font, buttons highlight, buttons separators)
 
 ### 1.0.1
-
 - changed fonts for sidebar items and tab labels to **Verdana** for better view
 - changed sidebar selected row color
 - added custom color scheme based on Monokai

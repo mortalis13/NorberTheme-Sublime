@@ -1,0 +1,14 @@
+{
+    "name": "Norber Widgets",
+    "globals":
+    {
+        "foreground": "hsl(50, 100%, 71%)",
+        "background": "hsl(0, 0%, 16%)",
+        "caret": "hsl(58, 100%, 49%)",
+        "selection": "hsl(0, 0%, 0%)",
+        "selection_border": "hsl(189, 72%, 56%)",
+        "inactive_selection": "hsl(0, 0%, 13%)",
+        "inactive_selection_border": "hsl(189, 72%, 56%)",
+        "rulers": "hsl(0, 0%, 87%)"
+    }
+}
