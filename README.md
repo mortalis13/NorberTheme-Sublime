@@ -1,10 +1,10 @@
 # Norber Theme 2.1
 
-Theme for [Sublime Text](https://www.sublimetext.com) and [Sublime Merge](https://www.sublimemerge.com).
+Theme for [Sublime Text](https://www.sublimetext.com) and [Sublime Merge](https://www.sublimemerge.com)
 
-Source themes: [Numix Theme](https://github.com/nauzethc/sublime-text-numix), [Material Theme](https://github.com/equinusocio/material-theme), default **Merge Dark** theme from **Sublime Merge**.
+Source themes: [Numix Theme](https://github.com/nauzethc/sublime-text-numix), [Material Theme](https://github.com/equinusocio/material-theme), default **Merge Dark** theme from **Sublime Merge**
 
-Package Control: [**Norber Theme**](https://packagecontrol.io/packages/Norber%20Theme).
+Package Control: [Norber Theme](https://packagecontrol.io/packages/Norber%20Theme)
 
 ## Changes
 - Space between tabs
@@ -46,7 +46,7 @@ For **Sublime Merge**:
 "color_scheme": "NorberMonokai.sublime-color-scheme",
 ```
 
-## Additional Settings [Optional]
+## Optional Settings
 **Sublime Text**
 ```
 "always_show_minimap_viewport" : true,
@@ -77,7 +77,7 @@ For **Sublime Merge**:
 ```
 
 ## Notes
-To reduce the loading time, put the **NorberTheme.sublime-package** to the **Installed Packages** folder.
+To reduce the loading time, zip the theme contents to a package file **NorberTheme.sublime-package** and put it into the **Installed Packages** folder
 
 ## Changelog
 ### 2.1
