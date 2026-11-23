@@ -59,7 +59,7 @@
   "highlighted_button_dark_fg": "var(foreground)",
 
   // Hazard Buttons
-  "hazard_button_bg": "var(red)",
+  "hazard_button_bg": "hsla(0, 100%, 60%, 0.5)",
 
   // Radio Buttons
   "radio_back": "var(background)",
@@ -267,8 +267,8 @@
   {
     "class": "button_control",
     "attributes": ["confirm"],
-    "layer0.opacity": 0.5,
-    "layer0.tint": "color(var(hazard_button_bg) l(+ 12%))",
+    "layer0.tint": "var(hazard_button_bg)",
+    "layer0.opacity": 1.0,
   },
   {
     "class": "button_control",
@@ -544,52 +544,54 @@
   },
   {
     "class": "hunk_button",
-    "parents": [{"class": "file_diff_hunk_container", "attributes": ["!hover"]}],
-    "attributes": ["!confirm"],
+    "parents": [{"class": "file_diff_hunk_container"}],
     "layer0.opacity": 0.0,
+  },
+  // Restore background on hunk pressed and not confirmed (pressed state is not cleared automatically)
+  // Result -> press style is removed
+  {
+    "class": "hunk_button",
+    "parents": [{"class": "file_diff_hunk_container"}],
+    "attributes": ["!confirm", "pressed"],
+    "layer0.tint": "var(button_bg)",
+  },
+  {
+    "class": "hunk_button",
+    "parents": [{"class": "file_diff_hunk_container"}],
+    "attributes": ["!confirm", "hover"],
+    "layer0.tint": "var(button_hover_bg)",
   },
   {
     "class": "hunk_button",
     "parents": [{"class": "file_diff_hunk_container", "attributes": ["hover"]}],
-    "layer0.opacity": 0.6,
+    "layer0.opacity": 1.0,
   },
   {
     "class": "hunk_button",
     "parents": [{"class": "file_diff_hunk_header", "attributes": ["selected"]}],
-    "layer0.opacity": 0.6,
-  },
-  {
-    "class": "hunk_button",
-    "parents": [{"class": "file_diff_hunk_container", "attributes": ["hover"]}],
-    "attributes": ["hover"],
-    "layer0.opacity": 0.8,
-  },
-  {
-    "class": "hunk_button",
-    "parents": [{"class": "file_diff_hunk_container", "attributes": ["hover"]}],
-    "attributes": ["pressed"],
     "layer0.opacity": 1.0,
   },
   {
     "class": "label_control",
     "parents": [{"class": "file_diff_hunk_container"}, {"class": "hunk_button"}],
     "font.size": 14,
-    "shadow_offset": 0
+    "shadow_offset": 0,
+    "opacity": 0.0
   },
   {
     "class": "label_control",
-    "parents": [{"class": "file_diff_hunk_container"}, {"class": "hunk_button", "attributes": ["!confirm"]}],
-    "fg": "var(foreground)",
+    "parents": [{"class": "hunk_button", "attributes": ["confirm"]}],
+    "opacity": 1.0
   },
   {
     "class": "label_control",
-    "parents": [{"class": "file_diff_hunk_container", "attributes": ["hover"]}, {"class": "hunk_button", "attributes": ["!confirm"]}],
-    "fg": "var(foreground)",
+    "parents": [{"class": "file_diff_hunk_container", "attributes": ["hover"]}, {"class": "hunk_button"}],
+    "opacity": 1.0
   },
   {
     "class": "label_control",
-    "parents": [{"class": "file_diff_hunk_header", "attributes": ["selected"]}, {"class": "hunk_button", "attributes": ["!confirm"]}],
-    "fg": "var(foreground)",
+    "parents": [{"class": "file_diff_hunk_header", "attributes": ["selected"]}, {"class": "hunk_button"}],
+    "opacity": 1.0
   },
   {
     "class": "icon_more_hunk",

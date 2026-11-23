@@ -1,4 +1,4 @@
-# Norber Theme 2.0
+# Norber Theme 2.1
 
 Theme for [Sublime Text](https://www.sublimetext.com) and [Sublime Merge](https://www.sublimemerge.com).
 
@@ -80,6 +80,9 @@ For **Sublime Merge**:
 To reduce the loading time, put the **NorberTheme.sublime-package** to the **Installed Packages** folder.
 
 ## Changelog
+### 2.1
+- normalized visibility and style for hunk buttons, normal and hazard (confirm)
+
 ### 2.0
 - adapted to be compatible with Sublime Text and Sublime Merge
 - changed status bar font to Consolas and increased font size
